@@ -2,8 +2,7 @@
 
     <PropertyGroup>
         <!-- Target multiple .NET versions -->
-        <TargetFramework>net9.0</TargetFramework>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFrameworks>net9.0; net8.0</TargetFrameworks>
 
         <!-- Enable implicit usings and nullable reference types -->
         <ImplicitUsings>enable</ImplicitUsings>
@@ -12,7 +11,7 @@
         <!-- NuGet package metadata -->
         <IsPackable>true</IsPackable>
         <PackageId>BonyadCode.Logger.AspNetCore</PackageId>
-        <Version>1.0.0</Version>
+        <Version>1.0.1</Version>
         <Authors>Mojtaba Hosseini</Authors>
         <Company>BonyadCode</Company>
         <Description>Structured and categorized Serilog-based logging for ASP.NET Core</Description>
@@ -30,16 +29,16 @@
 
     <ItemGroup>
         <!-- Reference ASP.NET Core shared framework -->
-        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
 
         <!-- Include README and LICENSE files in the NuGet package -->
-        <None Include="..\README.md" Pack="true" PackagePath="" />
-        <None Include="..\LICENSE" Pack="true" PackagePath="" />
+        <None Include="..\README.md" Pack="true" PackagePath=""/>
+        <None Include="..\LICENSE" Pack="true" PackagePath=""/>
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-        <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+        <PackageReference Include="Serilog.AspNetCore" Version="8.0.0"/>
     </ItemGroup>
 
 </Project>
